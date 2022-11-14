@@ -56,7 +56,7 @@ Se comprueba que la base de datos se creo correctamente
 
 ## 3. Acceder a MongoDB desde PowerShell
 
-Para poder iniciar la interfaz de shell de mongo db en docker es necesario ejecutar el sigueinte comadno:
+Para poder iniciar la interfaz de shell en docker es necesario ejecutar el sigueinte comadno:
 
     sudo docker exec -it <image_name> mongosh
 
