@@ -1,5 +1,5 @@
 
-## Resolcuion de los ejercicios planteados en la unidad 18 - Bases de datos NO-SQL
+## Resolucion de los ejercicios planteados en la unidad 18 - Bases de datos NO-SQL
 
 Utilizando los conceptos aprendidos en el módulo 18- Bases de datos
 no relacionales, se pide resolver los siguientes puntos:
