@@ -62,7 +62,7 @@ Para poder iniciar la interfaz de shell en docker es necesario ejecutar el sigue
 
 ![enter image description here](https://raw.githubusercontent.com/ricardolujan991/alkemy/main/UNIDAD-18-NO-SQL/img/5.png)
 ## 4. Acceder a la base de datos del paso 2
-comando para visualizar las db existentes y selecionar una para trabajar :
+comandos para visualizar las db existentes y selecionar una para trabajar :
 
     shows dbs
     use practica-no-sql
@@ -70,7 +70,7 @@ comando para visualizar las db existentes y selecionar una para trabajar :
 ![enter image description here](https://raw.githubusercontent.com/ricardolujan991/alkemy/main/UNIDAD-18-NO-SQL/img/7.png)
 ## 5. Crear dos colecciones
 
-comandos para crear colecciones : 
+comando para crear colecciones : 
 
     db.createCollection("<collection-name>")
 
@@ -100,7 +100,7 @@ comando para visulaizar todos los documentos de una coleccion
  ## 9. Listar un documento específico dentro de la colección
  Comando para visualizar un documento especifico : 
  
-comando para vizualizar documentos con un basados en un criterio de busqueda
+comando para vizualizar documentos basados en un criterio de busqueda
 
      db.getCollection('<collection-name>').find({"key:value})
 
@@ -114,7 +114,7 @@ Comando para actualizar un documento :
 
 ![enter image description here](https://raw.githubusercontent.com/ricardolujan991/alkemy/main/UNIDAD-18-NO-SQL/img/13.png)
  ## 11. Realizar un update a varios registros de forma simultánea
-comando para actualizar varios documentos dado 
+comando para actualizar varios documentos :
 
      db.getCollection('<collection-name>').updateMany({}, {$set: {key_update: value_update}})
 
