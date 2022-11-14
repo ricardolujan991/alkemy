@@ -20,7 +20,7 @@ no relacionales, se pide resolver los siguientes puntos:
 
 # Instalacion de mongo :
 
-antes de inicar a resolver los ejercicios planteados, es necesario preparar el entorno de trabajo de mongo-db, para poder realizarlo de forma repizada utilizaremos docker  
+antes de inicar a resolver los ejercicios planteados, es necesario preparar el entorno de trabajo de mongo-db, para poder realizarlo de forma repiada utilizaremos docker:  
 
     Comandos : 
     
