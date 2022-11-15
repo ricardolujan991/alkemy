@@ -1,4 +1,4 @@
-## Ejercicio UNIDAD 19 - PANDAS 1
+## UNIDAD 19 - PANDAS 1
 
  1.  Instalar Pandas en Jupyter Notebook.
  2.  Cargar un data frame desde un archivo csv.
