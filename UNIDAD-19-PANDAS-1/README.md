@@ -396,7 +396,7 @@ df_excel
 
  5. Instalar Pandas y Matplotlib.
 
-           pip install matplotlib
+        pip install matplotlib
 
 ---
 
@@ -580,7 +580,6 @@ df_csv.groupby('profession')['profession'].count().plot(kind='bar')
 
 
 
-    <AxesSubplot: xlabel='profession'>
 
 
 
