@@ -458,7 +458,7 @@ df_excel_group = df_excel.groupby('Country',).sum(numeric_only=True)
 print(df_excel_group.head())
 ```
 
-                              Units Sold  Manufacturing Price  Sale Price  \
+                              Units Sold  Manufacturing Price  Sale Price  
     Country                                                                 
     Canada                      247428.5                13150       16580   
     France                      240931.0                13374       16580   
@@ -466,7 +466,7 @@ print(df_excel_group.head())
     Mexico                      203325.0                13394       16580   
     United States of America    232627.5                14246       16580   
     
-                              Gross Sales    Discounts         Sales        COGS  \
+                              Gross Sales    Discounts         Sales        COGS  
     Country                                                                        
     Canada                     26932163.5  2044508.615  2.488765e+07  21358426.0   
     France                     26081674.5  1727502.220  2.435417e+07  20573151.5   
