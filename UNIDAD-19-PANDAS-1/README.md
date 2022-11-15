@@ -1,4 +1,4 @@
-## Ejercicio UNIDAD 19 - PANDAS 1<a href="#Ejercicio-UNIDAD-19---PANDAS-1" class="anchor-link">¶</a>
+## Ejercicio UNIDAD 19 - PANDAS 1<a href="#Ejercicio-UNIDAD-19---PANDAS-1"
 
 1.  Instalar Pandas en Jupyter Notebook.
 
