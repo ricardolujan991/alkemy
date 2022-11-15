@@ -22,7 +22,6 @@ no relacionales, se pide resolver los siguientes puntos:
 
 antes de inicar a resolver los ejercicios planteados, es necesario preparar el entorno de trabajo de mongo-db, para poder realizarlo de forma repiada utilizaremos docker:  
 
-    Comandos : 
     
 	docker run -d -p 27017:27017 --name mongo mongo
     
