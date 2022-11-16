@@ -34,6 +34,19 @@ df_medallas
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -187,7 +200,7 @@ año 1950.
 ```python
 df_medallas_desde_1950 = df_medallas[(df_medallas['Medal'] == 'Gold') 
                          & (df_medallas['Year'] >= 1950) 
-                         & (df_medallas['NOC'] == 'CAN')]
+                         & (df_medallas['NOC'] == 'USA')]
                          
 df_medallas_desde_1950
 ```
@@ -196,6 +209,19 @@ df_medallas_desde_1950
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -212,370 +238,129 @@ df_medallas_desde_1950
   </thead>
   <tbody>
     <tr>
-      <th>259</th>
+      <th>311</th>
       <td>1952</td>
       <td>Oslo</td>
-      <td>Ice Hockey</td>
-      <td>Ice Hockey</td>
-      <td>CAN</td>
-      <td>ice hockey</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>398</th>
-      <td>1960</td>
-      <td>Squaw Valley</td>
       <td>Skating</td>
       <td>Figure skating</td>
-      <td>CAN</td>
-      <td>pairs</td>
-      <td>X</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>399</th>
-      <td>1960</td>
-      <td>Squaw Valley</td>
-      <td>Skiing</td>
-      <td>Alpine Skiing</td>
-      <td>CAN</td>
-      <td>slalom</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>483</th>
-      <td>1964</td>
-      <td>Innsbruck</td>
-      <td>Bobsleigh</td>
-      <td>Bobsleigh</td>
-      <td>CAN</td>
-      <td>four-man</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>586</th>
-      <td>1968</td>
-      <td>Grenoble</td>
-      <td>Skiing</td>
-      <td>Alpine Skiing</td>
-      <td>CAN</td>
-      <td>giant slalom</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>793</th>
-      <td>1976</td>
-      <td>Innsbruck</td>
-      <td>Skiing</td>
-      <td>Alpine Skiing</td>
-      <td>CAN</td>
-      <td>giant slalom</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1013</th>
-      <td>1984</td>
-      <td>Sarajevo</td>
-      <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>1000m</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1014</th>
-      <td>1984</td>
-      <td>Sarajevo</td>
-      <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>1500m</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1291</th>
-      <td>1992</td>
-      <td>Albertville</td>
-      <td>Skating</td>
-      <td>Short Track S.</td>
-      <td>CAN</td>
-      <td>3000m relay</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1293</th>
-      <td>1992</td>
-      <td>Albertville</td>
-      <td>Skiing</td>
-      <td>Alpine Skiing</td>
-      <td>CAN</td>
-      <td>downhill</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1449</th>
-      <td>1994</td>
-      <td>Lillehammer</td>
-      <td>Biathlon</td>
-      <td>Biathlon</td>
-      <td>CAN</td>
-      <td>15km</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1450</th>
-      <td>1994</td>
-      <td>Lillehammer</td>
-      <td>Biathlon</td>
-      <td>Biathlon</td>
-      <td>CAN</td>
-      <td>7.5km</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1461</th>
-      <td>1994</td>
-      <td>Lillehammer</td>
-      <td>Skiing</td>
-      <td>Freestyle Ski.</td>
-      <td>CAN</td>
-      <td>moguls</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1642</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Bobsleigh</td>
-      <td>Bobsleigh</td>
-      <td>CAN</td>
-      <td>two-man</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1644</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Curling</td>
-      <td>Curling</td>
-      <td>CAN</td>
-      <td>curling</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1649</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Skating</td>
-      <td>Short Track S.</td>
-      <td>CAN</td>
-      <td>5000m relay</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1650</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Skating</td>
-      <td>Short Track S.</td>
-      <td>CAN</td>
-      <td>500m</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1654</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>500m</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1656</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Skiing</td>
-      <td>Snowboard</td>
-      <td>CAN</td>
-      <td>giant-slalom</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1850</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Ice Hockey</td>
-      <td>Ice Hockey</td>
-      <td>CAN</td>
-      <td>ice hockey</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1851</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Ice Hockey</td>
-      <td>Ice Hockey</td>
-      <td>CAN</td>
-      <td>ice hockey</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1852</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Skating</td>
-      <td>Figure skating</td>
-      <td>CAN</td>
-      <td>pairs</td>
-      <td>X</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1856</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Skating</td>
-      <td>Short Track S.</td>
-      <td>CAN</td>
-      <td>5000m relay</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1857</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Skating</td>
-      <td>Short Track S.</td>
-      <td>CAN</td>
-      <td>500m</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1861</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>500m</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1862</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Skiing</td>
-      <td>Cross Country S</td>
-      <td>CAN</td>
-      <td>5km pursuit</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>2087</th>
-      <td>2006</td>
-      <td>Turin</td>
-      <td>Bobsleigh</td>
-      <td>Skeleton</td>
-      <td>CAN</td>
+      <td>USA</td>
       <td>individual</td>
       <td>M</td>
       <td>Gold</td>
     </tr>
     <tr>
-      <th>2090</th>
-      <td>2006</td>
-      <td>Turin</td>
-      <td>Curling</td>
-      <td>Curling</td>
-      <td>CAN</td>
-      <td>curling</td>
+      <th>314</th>
+      <td>1952</td>
+      <td>Oslo</td>
+      <td>Skating</td>
+      <td>Speed skating</td>
+      <td>USA</td>
+      <td>500m</td>
       <td>M</td>
       <td>Gold</td>
     </tr>
     <tr>
-      <th>2092</th>
-      <td>2006</td>
-      <td>Turin</td>
-      <td>Ice Hockey</td>
-      <td>Ice Hockey</td>
-      <td>CAN</td>
-      <td>ice hockey</td>
+      <th>316</th>
+      <td>1952</td>
+      <td>Oslo</td>
+      <td>Skiing</td>
+      <td>Alpine Skiing</td>
+      <td>USA</td>
+      <td>giant slalom</td>
       <td>W</td>
       <td>Gold</td>
     </tr>
     <tr>
-      <th>2099</th>
-      <td>2006</td>
-      <td>Turin</td>
+      <th>317</th>
+      <td>1952</td>
+      <td>Oslo</td>
+      <td>Skiing</td>
+      <td>Alpine Skiing</td>
+      <td>USA</td>
+      <td>slalom</td>
+      <td>W</td>
+      <td>Gold</td>
+    </tr>
+    <tr>
+      <th>386</th>
+      <td>1956</td>
+      <td>Cortina d'Ampezzo</td>
       <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>1500m</td>
-      <td>W</td>
+      <td>Figure skating</td>
+      <td>USA</td>
+      <td>individual</td>
+      <td>M</td>
       <td>Gold</td>
     </tr>
     <tr>
-      <th>2103</th>
-      <td>2006</td>
-      <td>Turin</td>
-      <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>5000m</td>
-      <td>W</td>
-      <td>Gold</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>2106</th>
+      <th>2301</th>
       <td>2006</td>
       <td>Turin</td>
       <td>Skiing</td>
-      <td>Cross Country S</td>
-      <td>CAN</td>
-      <td>Sprint 1.5km</td>
+      <td>Alpine Skiing</td>
+      <td>USA</td>
+      <td>Alpine combined</td>
+      <td>M</td>
+      <td>Gold</td>
+    </tr>
+    <tr>
+      <th>2302</th>
+      <td>2006</td>
+      <td>Turin</td>
+      <td>Skiing</td>
+      <td>Alpine Skiing</td>
+      <td>USA</td>
+      <td>giant slalom</td>
       <td>W</td>
       <td>Gold</td>
     </tr>
     <tr>
-      <th>2108</th>
+      <th>2305</th>
       <td>2006</td>
       <td>Turin</td>
       <td>Skiing</td>
-      <td>Freestyle Ski.</td>
-      <td>CAN</td>
-      <td>moguls</td>
+      <td>Snowboard</td>
+      <td>USA</td>
+      <td>Half-pipe</td>
+      <td>M</td>
+      <td>Gold</td>
+    </tr>
+    <tr>
+      <th>2307</th>
+      <td>2006</td>
+      <td>Turin</td>
+      <td>Skiing</td>
+      <td>Snowboard</td>
+      <td>USA</td>
+      <td>Half-pipe</td>
       <td>W</td>
+      <td>Gold</td>
+    </tr>
+    <tr>
+      <th>2309</th>
+      <td>2006</td>
+      <td>Turin</td>
+      <td>Skiing</td>
+      <td>Snowboard</td>
+      <td>USA</td>
+      <td>Snowboard Cross</td>
+      <td>M</td>
       <td>Gold</td>
     </tr>
   </tbody>
 </table>
+<p>65 rows × 8 columns</p>
 </div>
 
 
@@ -610,7 +395,7 @@ conexion.execute(query_create_table)
 
 
 
-    <sqlite3.Cursor at 0x7fe8f4bf39c0>
+    <sqlite3.Cursor at 0x7f0c8fc875c0>
 
 
 
@@ -627,7 +412,7 @@ df_medallas_desde_1950.to_sql('medals', con=conexion, if_exists='replace', index
 
 
 
-    33
+    65
 
 
 
@@ -646,6 +431,19 @@ df
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -665,367 +463,126 @@ df
       <th>0</th>
       <td>1952</td>
       <td>Oslo</td>
-      <td>Ice Hockey</td>
-      <td>Ice Hockey</td>
-      <td>CAN</td>
-      <td>ice hockey</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1960</td>
-      <td>Squaw Valley</td>
       <td>Skating</td>
       <td>Figure skating</td>
-      <td>CAN</td>
-      <td>pairs</td>
-      <td>X</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1960</td>
-      <td>Squaw Valley</td>
-      <td>Skiing</td>
-      <td>Alpine Skiing</td>
-      <td>CAN</td>
-      <td>slalom</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1964</td>
-      <td>Innsbruck</td>
-      <td>Bobsleigh</td>
-      <td>Bobsleigh</td>
-      <td>CAN</td>
-      <td>four-man</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1968</td>
-      <td>Grenoble</td>
-      <td>Skiing</td>
-      <td>Alpine Skiing</td>
-      <td>CAN</td>
-      <td>giant slalom</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>1976</td>
-      <td>Innsbruck</td>
-      <td>Skiing</td>
-      <td>Alpine Skiing</td>
-      <td>CAN</td>
-      <td>giant slalom</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>1984</td>
-      <td>Sarajevo</td>
-      <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>1000m</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>1984</td>
-      <td>Sarajevo</td>
-      <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>1500m</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>1992</td>
-      <td>Albertville</td>
-      <td>Skating</td>
-      <td>Short Track S.</td>
-      <td>CAN</td>
-      <td>3000m relay</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>1992</td>
-      <td>Albertville</td>
-      <td>Skiing</td>
-      <td>Alpine Skiing</td>
-      <td>CAN</td>
-      <td>downhill</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>1994</td>
-      <td>Lillehammer</td>
-      <td>Biathlon</td>
-      <td>Biathlon</td>
-      <td>CAN</td>
-      <td>15km</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>1994</td>
-      <td>Lillehammer</td>
-      <td>Biathlon</td>
-      <td>Biathlon</td>
-      <td>CAN</td>
-      <td>7.5km</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>1994</td>
-      <td>Lillehammer</td>
-      <td>Skiing</td>
-      <td>Freestyle Ski.</td>
-      <td>CAN</td>
-      <td>moguls</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Bobsleigh</td>
-      <td>Bobsleigh</td>
-      <td>CAN</td>
-      <td>two-man</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Curling</td>
-      <td>Curling</td>
-      <td>CAN</td>
-      <td>curling</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Skating</td>
-      <td>Short Track S.</td>
-      <td>CAN</td>
-      <td>5000m relay</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Skating</td>
-      <td>Short Track S.</td>
-      <td>CAN</td>
-      <td>500m</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>500m</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>1998</td>
-      <td>Nagano</td>
-      <td>Skiing</td>
-      <td>Snowboard</td>
-      <td>CAN</td>
-      <td>giant-slalom</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Ice Hockey</td>
-      <td>Ice Hockey</td>
-      <td>CAN</td>
-      <td>ice hockey</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Ice Hockey</td>
-      <td>Ice Hockey</td>
-      <td>CAN</td>
-      <td>ice hockey</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Skating</td>
-      <td>Figure skating</td>
-      <td>CAN</td>
-      <td>pairs</td>
-      <td>X</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Skating</td>
-      <td>Short Track S.</td>
-      <td>CAN</td>
-      <td>5000m relay</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Skating</td>
-      <td>Short Track S.</td>
-      <td>CAN</td>
-      <td>500m</td>
-      <td>M</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>500m</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>2002</td>
-      <td>Salt Lake City</td>
-      <td>Skiing</td>
-      <td>Cross Country S</td>
-      <td>CAN</td>
-      <td>5km pursuit</td>
-      <td>W</td>
-      <td>Gold</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>2006</td>
-      <td>Turin</td>
-      <td>Bobsleigh</td>
-      <td>Skeleton</td>
-      <td>CAN</td>
+      <td>USA</td>
       <td>individual</td>
       <td>M</td>
       <td>Gold</td>
     </tr>
     <tr>
-      <th>27</th>
-      <td>2006</td>
-      <td>Turin</td>
-      <td>Curling</td>
-      <td>Curling</td>
-      <td>CAN</td>
-      <td>curling</td>
+      <th>1</th>
+      <td>1952</td>
+      <td>Oslo</td>
+      <td>Skating</td>
+      <td>Speed skating</td>
+      <td>USA</td>
+      <td>500m</td>
       <td>M</td>
       <td>Gold</td>
     </tr>
     <tr>
-      <th>28</th>
-      <td>2006</td>
-      <td>Turin</td>
-      <td>Ice Hockey</td>
-      <td>Ice Hockey</td>
-      <td>CAN</td>
-      <td>ice hockey</td>
+      <th>2</th>
+      <td>1952</td>
+      <td>Oslo</td>
+      <td>Skiing</td>
+      <td>Alpine Skiing</td>
+      <td>USA</td>
+      <td>giant slalom</td>
       <td>W</td>
       <td>Gold</td>
     </tr>
     <tr>
-      <th>29</th>
-      <td>2006</td>
-      <td>Turin</td>
+      <th>3</th>
+      <td>1952</td>
+      <td>Oslo</td>
+      <td>Skiing</td>
+      <td>Alpine Skiing</td>
+      <td>USA</td>
+      <td>slalom</td>
+      <td>W</td>
+      <td>Gold</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1956</td>
+      <td>Cortina d'Ampezzo</td>
       <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>1500m</td>
-      <td>W</td>
+      <td>Figure skating</td>
+      <td>USA</td>
+      <td>individual</td>
+      <td>M</td>
       <td>Gold</td>
     </tr>
     <tr>
-      <th>30</th>
-      <td>2006</td>
-      <td>Turin</td>
-      <td>Skating</td>
-      <td>Speed skating</td>
-      <td>CAN</td>
-      <td>5000m</td>
-      <td>W</td>
-      <td>Gold</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>31</th>
+      <th>60</th>
       <td>2006</td>
       <td>Turin</td>
       <td>Skiing</td>
-      <td>Cross Country S</td>
-      <td>CAN</td>
-      <td>Sprint 1.5km</td>
+      <td>Alpine Skiing</td>
+      <td>USA</td>
+      <td>Alpine combined</td>
+      <td>M</td>
+      <td>Gold</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>2006</td>
+      <td>Turin</td>
+      <td>Skiing</td>
+      <td>Alpine Skiing</td>
+      <td>USA</td>
+      <td>giant slalom</td>
       <td>W</td>
       <td>Gold</td>
     </tr>
     <tr>
-      <th>32</th>
+      <th>62</th>
       <td>2006</td>
       <td>Turin</td>
       <td>Skiing</td>
-      <td>Freestyle Ski.</td>
-      <td>CAN</td>
-      <td>moguls</td>
+      <td>Snowboard</td>
+      <td>USA</td>
+      <td>Half-pipe</td>
+      <td>M</td>
+      <td>Gold</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>2006</td>
+      <td>Turin</td>
+      <td>Skiing</td>
+      <td>Snowboard</td>
+      <td>USA</td>
+      <td>Half-pipe</td>
       <td>W</td>
+      <td>Gold</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>2006</td>
+      <td>Turin</td>
+      <td>Skiing</td>
+      <td>Snowboard</td>
+      <td>USA</td>
+      <td>Snowboard Cross</td>
+      <td>M</td>
       <td>Gold</td>
     </tr>
   </tbody>
 </table>
+<p>65 rows × 8 columns</p>
 </div>
 
 
