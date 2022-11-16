@@ -20,6 +20,7 @@ cargado correctamente.
 1. Conectarse a la [url](http://winterolympicsmedals.com/medals.csv) que contiene el archivo CSV de medallas
 
 
+
 ```python
 import pandas as pd 
 
